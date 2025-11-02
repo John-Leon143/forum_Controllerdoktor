@@ -5,4 +5,4 @@ from django.shortcuts import render
 def forum_home(request):
 
 
-    return render(request, 'forum_home.html')
+    return render(request, 'Forum_home/forum_home.html')
