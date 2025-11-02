@@ -1,18 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #080B2B;
-  min-height: 100vh;
-}
-
-/* Navigation */
+/*NAVIGATION Obere Navigationsleiste mit Logo, Suchfeld und Link*/
 nav {
   background-color: #0A0D33;
   border-bottom: 1px solid rgba(208, 211, 246, 0.1);
@@ -28,12 +14,14 @@ nav {
   gap: 2rem;
 }
 
+/* Logo "Forum" */
 .logo h1 {
   font-size: 1.5rem;
   font-weight: bold;
   color: #D0D3F6;
 }
 
+/* Suchleiste mit Icon */
 .search-container {
   flex: 1;
   max-width: 672px;
@@ -70,6 +58,7 @@ nav {
   border-color: #F2A6AB;
 }
 
+/* Navigation Links (Reviews, Forum, Tutorials) + Login Button */
 .nav-links {
   display: flex;
   align-items: center;
@@ -110,13 +99,15 @@ nav {
   height: 16px;
 }
 
-/* Main Content */
+
+/* MAIN CONTENT BEREICH Hauptinhalt mit Überschrift*/
 main {
   max-width: 1280px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
 }
 
+/* Section Header - "Beliebte Beiträge" Überschrift */
 .section-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -134,13 +125,15 @@ main {
   font-size: 1.125rem;
 }
 
-/* Cards Grid */
+
+/*FORUM KARTEN GRID Responsive Grid mit Forum-Posts */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
+/* Einzelne Karte */
 .forum-card {
   background-color: #D0D3F6;
   border-radius: 0.75rem;
@@ -154,6 +147,7 @@ main {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+/* Bild-Bereich */
 .card-image {
   position: relative;
   height: 192px;
@@ -171,6 +165,7 @@ main {
   transform: scale(1.05);
 }
 
+/* Category Badge */
 .category-badge {
   position: absolute;
   top: 1rem;
@@ -184,6 +179,7 @@ main {
   border-radius: 9999px;
 }
 
+/* Content-Bereich */
 .card-content {
   padding: 1.5rem;
 }
@@ -200,6 +196,7 @@ main {
   color: #B54585;
 }
 
+/* Textauszug - begrenzt auf 2 Zeilen */
 .card-excerpt {
   color: rgba(8, 11, 43, 0.7);
   margin-bottom: 1rem;
@@ -209,6 +206,7 @@ main {
   overflow: hidden;
 }
 
+/* Meta-Bereich  */
 .card-meta {
   display: flex;
   align-items: center;
@@ -217,6 +215,7 @@ main {
   border-top: 1px solid rgba(10, 13, 51, 0.1);
 }
 
+/* Avatar + Name + Datum*/
 .author-info {
   display: flex;
   align-items: center;
@@ -250,6 +249,7 @@ main {
   font-size: 0.75rem;
 }
 
+/* Replies und Likes */
 .card-stats {
   display: flex;
   align-items: center;
@@ -269,7 +269,8 @@ main {
   height: 16px;
 }
 
-/* Responsive Design */
+
+/* RESPONSIVE DESIGN*/
 @media (max-width: 768px) {
   .nav-container {
     flex-wrap: wrap;
@@ -280,11 +281,13 @@ main {
     font-size: 0.875rem;
   }
 
+  /* Suchleiste auf volle Breite */
   .search-container {
     order: 3;
     width: 100%;
   }
 
+  /* Karten einspaltig auf Mobile */
   .cards-grid {
     grid-template-columns: 1fr;
   }
