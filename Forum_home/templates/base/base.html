@@ -1,1 +1,30 @@
-ijodfgklfgjdlkäjf
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Forum ControllerDoktor{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>ControllerDoktor Forum</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/about/">Über uns</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- H Content der Seite -->
+
+
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ControllerDoktor</p>
+    </footer>
+</body>
+</html>
