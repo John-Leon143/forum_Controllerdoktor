@@ -9,13 +9,36 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <header>
-        <h1>ControllerDoktor Forum</h1>
-        <nav>
-            <a href="/">Home</a> |
-            <a href="/about/">Über uns</a>
-        </nav>
-    </header>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <h1>Forum</h1>
+      </div>
+
+      <div class="search-container">
+        <svg class="search-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <input type="text" class="search-input" placeholder="Suchen...">
+      </div>
+
+      <div class="nav-links">
+        <a href="#reviews">Reviews</a>
+        <a href="#forum">Forum</a>
+        <a href="#tutorials">Tutorials</a>
+        <button class="login-btn">
+          <svg class="login-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+            <polyline points="10 17 15 12 10 7"></polyline>
+            <line x1="15" x2="3" y1="12" y2="12"></line>
+          </svg>
+          Login
+        </button>
+      </div>
+    </div>
+  </nav>
+
 
     <main>
         {% block content %}
