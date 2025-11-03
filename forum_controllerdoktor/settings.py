@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 import os
 
+
+import markdown
 from machina import MACHINA_MAIN_STATIC_DIR
 
 
