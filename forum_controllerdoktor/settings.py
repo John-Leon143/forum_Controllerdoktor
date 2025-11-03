@@ -174,17 +174,13 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 
-# MACHINA 
-
+# MACHINA
 MACHINA_BASE_TEMPLATE_NAME = 'base.html'
 
-#MACHINA_MARKUP_WIDGET = 'machina.forms.widgets.MarkItUpWidget'
-
-
-MACHINA_MARKUP_LANGUAGE = ('markdown', 'markdown.markdown')  
-MACHINA_MARKUP_WIDGET = 'django.forms.Textarea'  
-MACHINA_MARKUP_RENDERER = 'machina.markup.renderers.MarkupRenderer'
-
+# Temporär Markdown deaktivieren
+MACHINA_MARKUP_LANGUAGE = None
+MACHINA_MARKUP_WIDGET = 'django.forms.Textarea'
+MACHINA_MARKUP_RENDERER = None
 
 MACHINA_FORUM_NAME = "ControllerDoktor Forum"
 
