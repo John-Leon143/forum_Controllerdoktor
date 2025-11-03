@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Forum_home.views import forum_home 
+from machina import urls as machina_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', forum_home, name='forum_home'),
+    path('forum/', include(machina_urls)),
 ]
 
