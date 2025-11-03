@@ -173,9 +173,13 @@ HAYSTACK_CONNECTIONS = {
 }
 
 # MACHINA 
-MACHINA_MARKUP_LANGUAGE = 'markdown'
-MACHINA_FORUM_NAME = 'ControllerDoktor Forum'
+
 MACHINA_BASE_TEMPLATE_NAME = 'base.html'
+MACHINA_MARKUP_LANGUAGE = ('markdown', 'markdown.markdown')
+MACHINA_MARKUP_WIDGET = 'machina.forms.widgets.MarkItUpWidget'
+MACHINA_MARKUP_RENDERER = 'machina.markup.renderers.MarkupRenderer'
+MACHINA_FORUM_NAME = "ControllerDoktor Forum"
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
