@@ -76,10 +76,13 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     
+    # Django Auth muss **vor** Machina ForumPermission sein
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    
+    # MACHINA Middleware
     'machina.apps.forum_permission.middleware.ForumPermissionMiddleware',
     
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
