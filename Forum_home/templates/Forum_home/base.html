@@ -28,14 +28,18 @@
         <a href="#reviews">Reviews</a>
         <a href="#forum">Forum</a>
         <a href="#tutorials">Tutorials</a>
-        <button class="login-btn">
-          <svg class="login-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-            <polyline points="10 17 15 12 10 7"></polyline>
-            <line x1="15" x2="3" y1="12" y2="12"></line>
-          </svg>
-          Login
-        </button>
+        <a href="{% url 'login' %}">
+          <button class="login-btn">
+            <svg class="login-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+              <polyline points="10 17 15 12 10 7"></polyline>
+              <line x1="15" x2="3" y1="12" y2="12"></line>
+            </svg>
+            Login
+          </button>
+        
+        </a>
+        
       </div>
     </div>
   </nav>
