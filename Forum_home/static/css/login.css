@@ -1,4 +1,18 @@
 
+main {
+  position: relative; /* Wichtig für die absolute Positionierung des Kindes */
+  min-height: 100vh;   /* Beispiel: Nimmt die volle Viewporthöhe ein */
+  width: 100%;         /* Beispiel: Nimmt die volle Breite ein */
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Hier können Sie auch width und height setzen */
+}
+
 .login-container {
   background-color: #D0D3F6;
   border-radius: 0.75rem;
