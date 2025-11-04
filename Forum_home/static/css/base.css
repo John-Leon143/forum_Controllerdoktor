@@ -1,3 +1,19 @@
+/*globales css*/
+h1 , h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #D0D3F6;
+}
+
+a {
+    text-decoration: none;
+    color: #D0D3F6;
+}
+
+
+
+
+
+
 /*NAVIGATION Obere Navigationsleiste mit Logo, Suchfeld und Link*/
 nav {
   background-color: #0A0D33;
