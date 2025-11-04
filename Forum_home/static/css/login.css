@@ -1,5 +1,5 @@
 
-.log-container {
+.login-container {
   background-color: #D0D3F6;
   border-radius: 0.75rem;
   overflow: hidden;
@@ -7,11 +7,11 @@
   transition: all 0.3s;
 }
 
-.log-container:hover {
+.login-container:hover {
     transform: translateY(-0.25rem);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)
 }
 
-.log-container p {
+.login-container p {
     color: #0A0D33;
 }
