@@ -62,10 +62,10 @@ INSTALLED_APPS = [
     'machina.apps.forum_tracking',
     'machina.apps.forum_member',
     'machina.apps.forum_permission',
+    'markdown',
     # CEO optimirungen
     'robots',
     'django.contrib.sitemaps',
-    'django.contrib.sites',
 
     # eigende apps
     'Forum_home',
