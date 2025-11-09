@@ -36,6 +36,15 @@ sitemaps = {
     'posts': RecentPostsSitemap,
 }
 
+
+# Custom sitemap view to enforce correct X-Robots-Tag
+def sitemap_no_robots(request, *args, **kwargs):
+    response = sitemap(request, *args, **kwargs)
+    response['X-Robots-Tag'] = 'index, follow'  # Überschreibt noindex
+    response['Content-Type'] = 'application/xml'  # sicherstellen
+    return response
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', forum_home, name='forum_home'),
@@ -48,7 +57,7 @@ urlpatterns = [
     # robots.txt
     path('robots.txt', include('robots.urls')),
     # Sitemaps
-    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
+    path('sitemap.xml', sitemap_no_robots, name='sitemap'),
 
 ]
 
