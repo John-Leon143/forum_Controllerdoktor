@@ -62,13 +62,17 @@ INSTALLED_APPS = [
     'machina.apps.forum_tracking',
     'machina.apps.forum_member',
     'machina.apps.forum_permission',
-
+    # CEO optimirungen
+    'robots'
 
     # eigende apps
     'Forum_home',
 ]
 
 SITE_ID = 1
+
+ROBOTS_USE_SITEMAP = True
+
 
 
 MIDDLEWARE = [
