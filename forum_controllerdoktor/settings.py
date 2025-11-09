@@ -64,6 +64,8 @@ INSTALLED_APPS = [
     'machina.apps.forum_permission',
     # CEO optimirungen
     'robots',
+    'django.contrib.sitemaps',
+    'django.contrib.sites',
 
     # eigende apps
     'Forum_home',
