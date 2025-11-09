@@ -23,8 +23,7 @@ from django.contrib.auth import views as auth_views
 
 # sitemaps
 from django.contrib.sitemaps.views import sitemap
-from sitemaps import ForumSitemap, TopicSitemap, RecentPostsSitemap
-import sitemaps
+from Forum_home.sitemaps import ForumSitemap, TopicSitemap, RecentPostsSitemap
 
 from Forum_home.views import forum_home 
 from machina import urls as machina_urls
