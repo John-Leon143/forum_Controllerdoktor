@@ -21,6 +21,10 @@ from django.conf.urls.static import static
 #log in logout 
 from django.contrib.auth import views as auth_views 
 
+# sitemaps
+from django.contrib.sitemaps.views import sitemap
+from sitemaps import ForumSitemap, TopicSitemap, RecentPostsSitemap
+
 
 from Forum_home.views import forum_home 
 from machina import urls as machina_urls
@@ -36,6 +40,16 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='logout'),
     # robots.txt
     path('robots.txt', include('robots.urls')),
+    # Sitemaps
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
 
 ]
 
+
+
+# Sitemaps configuration
+sitemaps = {
+    'forums': ForumSitemap,
+    'topics': TopicSitemap,
+    'posts': RecentPostsSitemap,
+}
