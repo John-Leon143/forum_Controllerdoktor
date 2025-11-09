@@ -28,6 +28,14 @@ from Forum_home.sitemaps import ForumSitemap, TopicSitemap, RecentPostsSitemap
 from Forum_home.views import forum_home 
 from machina import urls as machina_urls
 
+
+# Sitemaps configuration
+sitemaps = {
+    'forums': ForumSitemap,
+    'topics': TopicSitemap,
+    'posts': RecentPostsSitemap,
+}
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', forum_home, name='forum_home'),
@@ -46,9 +54,3 @@ urlpatterns = [
 
 
 
-# Sitemaps configuration
-sitemaps = {
-    'forums': ForumSitemap,
-    'topics': TopicSitemap,
-    'posts': RecentPostsSitemap,
-}
