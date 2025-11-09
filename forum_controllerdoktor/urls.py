@@ -38,10 +38,11 @@ sitemaps = {
 
 
 # Custom sitemap view to enforce correct X-Robots-Tag
-def sitemap_no_robots(request, *args, **kwargs):
-    response = sitemap(request, *args, **kwargs)
-    response['X-Robots-Tag'] = 'index, follow'  # Überschreibt noindex
-    response['Content-Type'] = 'application/xml'  # sicherstellen
+def sitemap_no_robots(request):
+    
+    response = sitemap(request, sitemaps=sitemaps)
+    response['X-Robots-Tag'] = 'index, follow'
+    response['Content-Type'] = 'application/xml'
     return response
 
 
