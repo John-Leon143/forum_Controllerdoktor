@@ -63,7 +63,7 @@ INSTALLED_APPS = [
     'machina.apps.forum_member',
     'machina.apps.forum_permission',
     # CEO optimirungen
-    'robots'
+    'robots',
 
     # eigende apps
     'Forum_home',
