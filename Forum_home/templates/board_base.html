@@ -16,9 +16,9 @@
 
 
 {% block body %}
-<link rel="stylesheet" href="{% static 'css/forum/main.css' %}" />
-{% block header %}
 
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/forum/main.css' %}" />
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="{% url 'forum:index' %}">{% block brand %}{{ MACHINA_FORUM_NAME|default:"My forum" }}{% endblock %}</a>
