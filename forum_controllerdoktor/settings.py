@@ -45,6 +45,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'django.contrib.sites',
+
+    # eigende apps
+    'Forum_home',
+
+
     # Maschina dependencies
     'mptt',
     'haystack',
@@ -67,8 +72,7 @@ INSTALLED_APPS = [
     'robots',
     'django.contrib.sitemaps',
 
-    # eigende apps
-    'Forum_home',
+
 ]
 
 SITE_ID = 1
