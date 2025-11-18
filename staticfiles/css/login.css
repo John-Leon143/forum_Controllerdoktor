@@ -1,0 +1,31 @@
+
+main {
+  position: relative; /* Wichtig für die absolute Positionierung des Kindes */
+  min-height: 100vh;   /* Beispiel: Nimmt die volle Viewporthöhe ein */
+  width: 100%;         /* Beispiel: Nimmt die volle Breite ein */
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Hier können Sie auch width und height setzen */
+}
+
+.login-container {
+  background-color: #D0D3F6;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-container:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)
+}
+
+.login-container p {
+    color: #0A0D33;
+}

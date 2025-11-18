@@ -1,0 +1,23 @@
+[0;1;32m●[0m forum.service - Gunicorn Django Forum
+     Loaded: loaded (]8;;file://ubuntu/etc/systemd/system/forum.service/etc/systemd/system/forum.service]8;;; [0;1;38;5;185mdisabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Sun 2025-11-09 18:40:06 UTC; 8s ago
+   Main PID: 1647 (gunicorn)
+      Tasks: 4 (limit: 960)
+     Memory: 116.9M (peak: 120.0M)
+        CPU: 3.270s
+     CGroup: /system.slice/forum.service
+             ├─[0;38;5;245m1647 /var/www/controllerdoktor/django/bin/python3 /var/www/controllerdoktor/django/bin/gunicorn --workers 3 --bind unix:/var/www/forum_controllerdoktor/forum.sock forum_controllerdoktor.wsgi:application[0m
+             ├─[0;38;5;245m1658 /var/www/controllerdoktor/django/bin/python3 /var/www/controllerdoktor/django/bin/gunicorn --workers 3 --bind unix:/var/www/forum_controllerdoktor/forum.sock forum_controllerdoktor.wsgi:application[0m
+             ├─[0;38;5;245m1659 /var/www/controllerdoktor/django/bin/python3 /var/www/controllerdoktor/django/bin/gunicorn --workers 3 --bind unix:/var/www/forum_controllerdoktor/forum.sock forum_controllerdoktor.wsgi:application[0m
+             └─[0;38;5;245m1660 /var/www/controllerdoktor/django/bin/python3 /var/www/controllerdoktor/django/bin/gunicorn --workers 3 --bind unix:/var/www/forum_controllerdoktor/forum.sock forum_controllerdoktor.wsgi:application[0m
+
+Nov 09 18:40:13 ubuntu gunicorn[1658]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Nov 09 18:40:13 ubuntu gunicorn[1658]:   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+Nov 09 18:40:13 ubuntu gunicorn[1658]:   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+Nov 09 18:40:13 ubuntu gunicorn[1658]:   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+Nov 09 18:40:13 ubuntu gunicorn[1658]:   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+Nov 09 18:40:13 ubuntu gunicorn[1658]:   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+Nov 09 18:40:13 ubuntu gunicorn[1658]:   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+Nov 09 18:40:13 ubuntu gunicorn[1658]:   File "/var/www/forum_controllerdoktor/forum_controllerdoktor/urls.py", line 26, in <module>
+Nov 09 18:40:13 ubuntu gunicorn[1658]:     from sitemaps import ForumSitemap, TopicSitemap, RecentPostsSitemap
+Nov 09 18:40:13 ubuntu gunicorn[1658]: ModuleNotFoundError: No module named 'sitemaps'

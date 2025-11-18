@@ -1,0 +1,7 @@
+/* Custom styles for maschina template */
+
+.categories {
+    display: grid;
+    gap: 20px;
+    color: green;
+}
