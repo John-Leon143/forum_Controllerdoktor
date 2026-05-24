@@ -1,10 +1,16 @@
 # Forum Controller Doktor
 
-**⚠️ Archiv-Repository** - Diese Website ist offline und wird nicht mehr aktiv gepflegt.
+**⚠️ Archiv-Repository** - Dieses Projekt wurde nie fertiggestellt und nie veröffentlicht.
 
 ## Beschreibung
 
-Version Kontrolle für ein Django-basiertes Forum-Projekt. Dieses Repository enthält den quellcode des Controllerdoktor Forums, das sich nicht mehr im aktiven Betrieb befindet.
+Dieses Repository enthält den Quellcode für eine geplante Forum-Erweiterung des Gewerbes **Controller Doktor** (Unternehmen meines Vaters). Das Projekt sollte eine Community-Plattform bereitstellen, wurde aber nie fertiggestellt.
+
+Das Projekt wurde mit Hilfe von KI entwickelt, kam aber über die Entwicklungsphase nie hinaus und wurde nie öffentlich veröffentlicht.
+
+## Ursprüngliche Vision
+
+Das Forum sollte als Erweiterung zu Controller Doktor dienen und eine Kommunikationsplattform für die Community bieten. Es basiert auf Django und wurde als Full-Stack-Web-Anwendung konzipiert.
 
 ## Technologie-Stack
 
@@ -29,11 +35,14 @@ forum_Controllerdoktor/
 
 ## Status
 
-🛑 **Offline seit längerer Zeit** - Die Website ist nicht mehr erreichbar. Dieses Repository dient nur noch Archivierungszwecken.
+🛑 **Archiviert - Nicht aktiv**
+- Projekt wurde nie fertiggestellt
+- Website ist offline
+- Keine aktive Entwicklung oder Wartung
 
 ## Installation & Entwicklung
 
-Falls du das Projekt lokal revivieren möchtest:
+Falls du das Projekt lokal inspizieren oder weiterentwickeln möchtest:
 
 1. **Abhängigkeiten installieren**
    ```bash
@@ -56,4 +65,4 @@ Keine spezifische Lizenz definiert.
 
 ---
 
-**Hinweis:** Dieses Repository enthält archivierte Daten eines Projekts, das sich nicht mehr im aktiven Betrieb befindet.
+**Hinweis:** Dieses Repository ist ein Archiv eines experimentellen Projekts. Es enthält Code, der mit KI-Unterstützung entwickelt wurde, aber nie zur Produktion ging.
